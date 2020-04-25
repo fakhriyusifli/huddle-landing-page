@@ -9,7 +9,7 @@ body {
 
 /*TOP CONTAINER*/
 
-header {
+.header {
 	margin-bottom: 100px;
 }
 .top-container {
@@ -40,7 +40,6 @@ header {
 
 .try-it-free-button {
 	background-color: white;
-
 	width: 200px;
 	height: 45px;
 	border: 0;
@@ -48,6 +47,7 @@ header {
 	float: right;
 	box-shadow: 2px 2px 7px 2px lightgrey;
 }
+
 .try-it-free-button a{
 	color: hsl(192, 100%, 9%);
 	font-weight: bold;
@@ -197,10 +197,88 @@ footer {
 	padding-bottom: 3%;
 	padding-right: 7%;
 }
+/*MEDIA QUERIES FOR LESS THAN 650px*/
+@media (max-width: 650px) {
+	.logo {
+		margin-bottom: 10%;
+	}
+	.header{
+		text-align: center;
+	}
+	.mobile-size-top-button {
+		padding-right: 20%;
+	}
+	.bottom-container-get-started-button {
+		width: 200px;
+		height: 50px;
+	}
+	.big-heading {
+		font-size: 2.5rem;
+	}
+	.top-left {
+		text-align: center;
+	}
+	.top-left-para {
+		font-size: 2rem;
+	}
+	.top-container-get-started-button {
+		margin-bottom: 7%;
+		margin-top: 7%;
+	}
+	/*media queries for middle container (<650px)*/
+	.middle-container {
+		margin-bottom: 40%;
+	}
+	.middle-rows, .right-imgs, .left-img {
+		text-align: center;
+	}
+	.transparent-para {
+		font-size: 1.8rem;
+		padding-top: 5%;
+		margin-bottom: 10%;
+	}
+	.section-rows-img {
+		margin-bottom: 12%;
+		margin-top: 12%;
+	}
+	.middle-headings {
+		font-size: 2.5rem;
+	}
+	.desktop-size {
+		display: none;
+	}
+	.mobile-size {
+		display: block;
+	}
+	/*MEDIA QUERIES FOR BOTTOM CONTAINER (<650px)*/
+	.build-community {
+		width: 80%;
+		left: 10%;
+		padding: 9% 2%;
+		top: -20%;
+	}
+	.community-middle-headings {
+		font-size: 1.5rem;
+	}
+	.contact-section {
+		padding: 20% 5% 5%;
+		text-align: left;
+	}
+	ul li {
+		padding-left: 0;
+		margin: 3% 0;
+	}
+	ul {
+		padding-left: 0;
+	}
+	.copy-para {
+		text-align: center;	
+	}
+}
 
-/*MEDIA QUERIES*/
+/*MEDIA QUERIES FOR BETWEEN 1000PX and 650PX*/
 
-@media (max-width: 1000px) {
+@media (max-width: 1000px) and (min-width: 650px) {
 	
 	/*media queries for top container*/
 	
@@ -217,9 +295,7 @@ footer {
 		margin-bottom: 7%;
 		margin-top: 7%;
 	}
-	
 	/*media queries for middle container*/
-	
 	.middle-container {
 		margin-bottom: 40%;
 	}
@@ -245,7 +321,6 @@ footer {
 		display: block;
 	}
 	/*MEDIA QUERIES FOR BOTTOM CONTAINER*/
-
 	.build-community {
 		width: 80%;
 		left: 10%;
@@ -270,13 +345,3 @@ footer {
 		text-align: center;	
 	}
 }
-
-/*
-
-.bottom-sections-left {
-	margin-bottom: 1rem;
-}
-.bottom-sections-left span {
-	margin-left: 0.8rem;
-}
-*/
