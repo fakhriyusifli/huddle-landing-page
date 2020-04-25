@@ -211,7 +211,9 @@ footer {
 	.bottom-container-get-started-button {
 		width: 200px;
 		height: 50px;
-		font-size: 10px;
+	}
+	.bottom-container-get-started-button a {
+		font-size: 0.9rem;
 	}
 	.big-heading {
 		font-size: 2.5rem;
